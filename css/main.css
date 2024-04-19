@@ -78,7 +78,7 @@ img {
 }
 
 .wrapper {
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,40,0,1) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(43, 23, 0) 100%);
   width: 100%;
 }
 
@@ -94,7 +94,8 @@ header {
   padding: 50px 0;
 }
 
-header .header_logo {
+header .header_logo,
+.blocks_logo {
   text-transform: uppercase;
   font-size: 29px;
   font-weight: 800;
@@ -137,14 +138,16 @@ header .header_nav ul li:not(.header_nav-activate):not(.header_nav-btn) a:hover 
   border-bottom: 5px solid #DC7000;
 }
 
-header .header_nav ul li.header_nav-btn a {
+header .header_nav ul li.header_nav-btn a,
+.email .email_block button {
   background: #FA9021;
   padding: 9px 17px;
   border-radius: 5px;
   transition: all 500ms ease;
 }
 
-header .header_nav ul li.header_nav-btn a:hover {
+header .header_nav ul li.header_nav-btn a:hover,
+.email .email_block button:hover {
   background: #fa21d6;
 }
 
@@ -213,7 +216,8 @@ header .header_nav ul li.header_nav-btn a:hover {
   font-size: 31px;
 }
 
-.trend .trend_btn{
+.trend .trend_btn,
+.folio .folio_btn{
   color: #fff;
   background: #25211D;
   border-radius: 5px;
@@ -223,7 +227,10 @@ header .header_nav ul li.header_nav-btn a:hover {
   transition: all 500ms ease;
 }
 
-.trend .trend_btn:hover{
+
+
+.trend .trend_btn:hover,
+.folio .folio_btn:hover{
   transform: scale(1.1);
   background: #2e2924;
 }
@@ -290,7 +297,7 @@ header .header_nav ul li.header_nav-btn a:hover {
 /* section feature */
 
 .feature{
-  background: url('../img/feature.png') no-repeat center center fixed;
+  background: url('../img/feature.png') no-repeat center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -299,7 +306,7 @@ header .header_nav ul li.header_nav-btn a:hover {
 .feature p{
   margin-bottom: 20px;
   text-align: center;
-  min-width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -313,9 +320,143 @@ header .header_nav ul li.header_nav-btn a:hover {
   flex-wrap: wrap;
 }
 
+.feature .feature_info .feature_block{
+  text-align: center;
+  width: 20%;
+  margin: 30px 2%;
+}
+
+.feature .feature_info .feature_block img{
+  margin-bottom: 15px;
+}
+
+
 /* section feature */
 
 
+
+/* folio section */
+
+.folio {
+  padding: 100px 0;
+}
+.folio h3{
+  font-size: 30px;
+  text-align: center;
+}
+.folio p{
+  margin: 40px 0;
+  text-align: center;
+}
+.folio .folio_img{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.folio .folio_btn{
+  float: none;
+  width: 120px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* folio section */
+
+/* email section  */
+
+.email{
+  padding-bottom: 120px;
+}
+.email h3{
+  margin-top: 60px;
+  font-size: 30px;
+}
+.email .email_block{
+  background: #1C140F;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 40px 3%;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.email .email_block h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.email .email_block p {
+  font-weight: 500;
+  max-width: 500px;
+}
+.email .email_block input {
+  background: #fff;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  width: 450px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 20px 30px;
+  padding-right: 130px;
+  position: relative;
+  right: -117px;
+  z-index: 1;
+}
+.email .email_block input::placeholder {
+  color: #898989;
+}
+.email .email_block button{
+  cursor: pointer;
+  border: 0;
+  padding: 13px 17px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+
+/* email section  */
+
+/* footer section */
+
+.footer{
+  background: #000;
+  padding: 50px 0;
+}
+
+.footer_blocks{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_blocks p{
+  width: 300px;
+  margin: 15px 0;
+}
+.footer_blocks h4{
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.footer_blocks ul{
+  list-style: none;
+}
+.footer_blocks li{
+  margin-top: 7px;
+  opacity: 0.8;
+}
+
+.footer hr{
+  margin: 30px 0;
+  border: 0;
+  height: 0.6px;
+  background: #ccc;
+}
+.footer > p{
+  text-align: center;
+}
+/* footer section */
 
 
 /* финиш стили проекта */

@@ -92,38 +92,120 @@
         </p>
         <div class="feature_info">
           <div class="feature_block">
-            <img src="img/feature1.png" alt="">
+            <img src="img/feature1.png" alt="" />
             <p>Mobile Game Development</p>
-            <img src="img/arrow.png" alt="">
+            <img src="img/arrow.png" alt="" />
           </div>
           <div class="feature_block">
-            <img src="img/feature2.png" alt="">
+            <img src="img/feature2.png" alt="" />
             <p>PC Game Development</p>
-            <img src="img/arrow.png" alt="">
+            <img src="img/arrow.png" alt="" />
           </div>
           <div class="feature_block">
-            <img src="img/feature3.png" alt="">
+            <img src="img/feature3.png" alt="" />
             <p>PS4 Game Development</p>
-            <img src="img/arrow.png" alt="">
+            <img src="img/arrow.png" alt="" />
           </div>
           <div class="feature_block">
-            <img src="img/feature4.png" alt="">
+            <img src="img/feature4.png" alt="" />
             <p>AR/VR Solutions</p>
-            <img src="img/arrow.png" alt="">
+            <img src="img/arrow.png" alt="" />
           </div>
           <div class="feature_block">
-            <img src="img/feature5.png" alt="">
+            <img src="img/feature5.png" alt="" />
             <p>AR/ VR design</p>
-            <img src="img/arrow.png" alt="">
+            <img src="img/arrow.png" alt="" />
           </div>
           <div class="feature_block">
-            <img src="img/feature6.png" alt="">
+            <img src="img/feature6.png" alt="" />
             <p>3D Modelings</p>
-            <img src="img/arrow.png" alt="">
+            <img src="img/arrow.png" alt="" />
           </div>
         </div>
       </div>
     </section>
+
+    <div class="wrapper">
+      <section class="folio container">
+        <h3>Our Recent Projects</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <div class="folio_img">
+          <img src="img/folio1.png" alt="" />
+          <img src="img/folio2.png" alt="" />
+          <img src="img/folio3.png" alt="" />
+        </div>
+        <div class="folio_img">
+          <img src="img/folio4.png" alt="" />
+          <img src="img/folio5.png" alt="" />
+          <img src="img/folio6.png" alt="" />
+        </div>
+        <a class="folio_btn" href="">SEE ALL</a>
+      </section>
+
+      <section class="email container">
+        <h3>Lorem Ipsum</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, nihil!
+        </p>
+        <div class="email_block">
+          <div>
+            <h4>Stay in the loop</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+              modi eaque? Quod officiis aut facilis quasi!
+            </p>
+          </div>
+          <div>
+            <input
+              type="email"
+              id="emailField"
+              placeholder="Enter email address"
+            />
+            <button onclick="checkEmail()">Continue</button>
+          </div>
+        </div>
+        <script>
+          function checkEmail() {
+            let email = document.querySelector("#emailField").value;
+            if (!email.includes("@")) alert("not @");
+            else if (!email.includes(".")) alert("not .");
+            else alert("good");
+            // alert(email.value);
+          }
+        </script>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_blocks container">
+        <div>
+          <span class="logo blocks_logo">logo</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            perspiciatis.
+          </p>
+        </div>
+        <div>
+          <h4>About us</h4>
+          <ul>
+            <li>Zeux</li>
+            <li>Portfolio</li>
+            <li>Careers</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact us</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>+908 89097 890</p>
+        </div>
+      </div>
+      <hr>
+      <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
