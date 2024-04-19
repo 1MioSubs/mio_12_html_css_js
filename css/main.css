@@ -203,6 +203,118 @@ header .header_nav ul li.header_nav-btn a:hover {
 
 /* хиро сектион стили */
 
+/* section trend */
+.trend{
+  padding-top: 50px;
+}
+
+.trend h3{
+  font-weight: 600;
+  font-size: 31px;
+}
+
+.trend .trend_btn{
+  color: #fff;
+  background: #25211D;
+  border-radius: 5px;
+  padding: 12px 23px;
+  float: right;
+  display: block;
+  transition: all 500ms ease;
+}
+
+.trend .trend_btn:hover{
+  transform: scale(1.1);
+  background: #2e2924;
+}
+
+.trend .trend_games{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.trend .trend_games span{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trend .trend_games span img{
+  position: relative;
+  top: 5px;
+  margin-right: 7px;
+}
+
+
+/* section trend */
+
+/* section big text */
+
+.big-text{
+  padding: 50px 0;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  width: 800px;
+}
+
+
+/* section big text */
+
+/* section banner */
+
+.banner{
+  padding: 80px 0;
+}
+
+.banner h3{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.banner p{
+  line-height: 170%;
+  margin-bottom: 30px;
+  width: 550px;
+}
+
+.banner img{
+  margin-bottom: 30px;
+  width: 100%;
+}
+/* section banner */
+
+/* section feature */
+
+.feature{
+  background: url('../img/feature.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.feature h3,
+.feature p{
+  margin-bottom: 20px;
+  text-align: center;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.feature h3{
+  font-size: 30px;
+}
+
+.feature .feature_info{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* section feature */
+
 
 
 
