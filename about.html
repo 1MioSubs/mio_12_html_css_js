@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game site</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container">
+        <span class="header_logo">logo</span>
+        <nav class="header_nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="header_nav-activate">
+              <a href="about.html">About us</a>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News</a></li>
+            <li class="header_nav-btn"><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero-about container">
+        <div class="hero-about_info">
+          <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <button class="hero-about_btn">Get in touch</button>
+        </div>
+        <img src="img/aboutfoto.png" alt="" />
+      </section>
+
+      <section class="work container">
+        <h2>Why work with us</h2>
+        <div class="work_blocks">
+          <div class="work_block">
+            <span class="worck_badge purple">Lorem, ipsum.</span>
+            <h3>Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              numquam recusandae repellat temporibus, assumenda id?
+            </p>
+          </div>
+          <div class="work_block">
+            <span class="worck_badge brown">Lorem, ipsum.</span>
+            <h3>Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              numquam recusandae repellat temporibus, assumenda id?
+            </p>
+          </div>
+          <div class="work_block">
+            <span class="worck_badge green">Lorem, ipsum.</span>
+            <h3>Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              numquam recusandae repellat temporibus, assumenda id?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="email container">
+        <h3>Lorem Ipsum</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, nihil!
+        </p>
+        <div class="email_block">
+          <div>
+            <h4>Stay in the loop</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+              modi eaque? Quod officiis aut facilis quasi!
+            </p>
+          </div>
+          <div>
+            <input
+              type="email"
+              id="emailField"
+              placeholder="Enter email address"
+            />
+            <button onclick="checkEmail()">Continue</button>
+          </div>
+        </div>
+        <script>
+          function checkEmail() {
+            let email = document.querySelector("#emailField").value;
+            if (!email.includes("@")) alert("not @");
+            else if (!email.includes(".")) alert("not .");
+            else alert("good");
+            // alert(email.value);
+          }
+        </script>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_blocks container">
+        <div>
+          <span class="logo blocks_logo">logo</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            perspiciatis.
+          </p>
+        </div>
+        <div>
+          <h4>About us</h4>
+          <ul>
+            <li>Zeux</li>
+            <li>Portfolio</li>
+            <li>Careers</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact us</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>+908 89097 890</p>
+        </div>
+      </div>
+      <hr />
+      <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -80,6 +80,7 @@ img {
 .wrapper {
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(43, 23, 0) 100%);
   width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -183,7 +184,8 @@ header .header_nav ul li.header_nav-btn a:hover,
   margin: 30px 0;
 }
 
-.hero .hero_info .hero_btn {
+.hero .hero_info .hero_btn,
+.hero-about_btn {
   background: #FA8305;
   color: #fff;
   border-radius: 50px;
@@ -192,7 +194,8 @@ header .header_nav ul li.header_nav-btn a:hover,
   transition: all 500ms ease;
 }
 
-.hero .hero_info .hero_btn:hover {
+.hero .hero_info .hero_btn:hover,
+.hero-about_btn:hover {
   cursor: pointer;
   transform: scale(1.1);
   background: #fa21d6;
@@ -417,6 +420,69 @@ header .header_nav ul li.header_nav-btn a:hover,
 
 
 /* email section  */
+
+/* about section 2 page */
+
+.hero-about{
+  position: relative;
+}
+.hero-about img{
+  position: absolute;
+  top: 0;
+  right: -150px;
+}
+
+.hero-about_info{
+  width: 500px;
+  padding: 200px 0;
+}
+.hero-about_info h1{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.hero-about_btn {
+  margin-top: 2px;
+}
+
+
+.work{
+  padding: 80px 0;
+}
+
+.work h2{
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.work_blocks{
+  display: flex;
+  justify-content: space-between;
+}
+.work_block{
+  width: 25%;
+  border-radius: 10px;
+  padding: 50px 35px;
+  background: #1C140F;
+}
+.work_block h3{
+  font-size: 20px;
+  margin: 20px 0;
+}
+.worck_badge{
+  border-radius: 7px;
+  padding: 10px 20px;
+}
+.worck_badge.purple{
+  background: #560F67;
+}
+.worck_badge.brown{
+  background: #31190D;
+}
+.worck_badge.green{
+  background: #192A1D;
+}
+
+/* about section 2 page */
 
 /* footer section */
 
